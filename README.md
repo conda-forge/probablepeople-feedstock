@@ -11,6 +11,18 @@ Summary: Parse romanized names & companies using advanced NLP methods
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/probablepeople-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/probablepeople-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/probablepeople-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/probablepeople-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/probablepeople-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/probablepeople-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/probablepeople/badges/version.svg)](https://anaconda.org/conda-forge/probablepeople)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/probablepeople/badges/downloads.svg)](https://anaconda.org/conda-forge/probablepeople)
+
 Installing probablepeople
 =========================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `probablepeople` available on your
 ```
 conda search probablepeople --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/probablepeople-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/probablepeople-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/probablepeople-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/probablepeople-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/probablepeople-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/probablepeople-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/probablepeople/badges/version.svg)](https://anaconda.org/conda-forge/probablepeople)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/probablepeople/badges/downloads.svg)](https://anaconda.org/conda-forge/probablepeople)
 
 
 Updating probablepeople-feedstock
