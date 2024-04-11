@@ -1,6 +1,6 @@
 {% set name = "probablepeople" %}
-{% set version = "0.5.4" %}
-{% set sha256 = "3ba4e98fba44b123fc5533c93d634cf76b16462e51d2abbec0761e9451bd2144" %}
+{% set version = "0.5.5" %}
+{% set sha256 = "6babe345d85577f0e2a174fd819eb29dae7835777d8415f04fbdbe6068819ab3" %}
 
 package:
   name: {{ name|lower }}
@@ -12,12 +12,12 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1001
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
-  skip: True  # [not py27]
+  skip: true  # [not py27]
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
 
