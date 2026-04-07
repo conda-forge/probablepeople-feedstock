@@ -12,7 +12,11 @@ source:
   sha256: {{ sha256 }}
 
 build:
+<<<<<<< rebuild-python312-0-1_h38210c
+  number: 1002
+=======
   number: 0
+>>>>>>> main
   script: python setup.py install --single-version-externally-managed --record record.txt
   skip: true  # [not py27]
 
