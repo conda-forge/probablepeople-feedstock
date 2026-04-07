@@ -11,6 +11,7 @@ import os
 import platform
 import subprocess
 from argparse import ArgumentParser
+import platform
 
 
 def setup_environment(ns):
