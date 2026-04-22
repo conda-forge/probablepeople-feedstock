@@ -20,8 +20,13 @@ bld.bat text eol=crlf
 .travis.yml linguist-generated=true
 .scripts/* linguist-generated=true
 .woodpecker.yml linguist-generated=true
+<<<<<<< 0.5.6_h0133b9
+/LICENSE.txt linguist-generated=true
+/README.md linguist-generated=true
+=======
 LICENSE.txt linguist-generated=true
 README.md linguist-generated=true
+>>>>>>> main
 azure-pipelines.yml linguist-generated=true
 build-locally.py linguist-generated=true
 shippable.yml linguist-generated=true

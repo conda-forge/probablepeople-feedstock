@@ -1,6 +1,6 @@
 {% set name = "probablepeople" %}
-{% set version = "0.5.5" %}
-{% set sha256 = "6babe345d85577f0e2a174fd819eb29dae7835777d8415f04fbdbe6068819ab3" %}
+{% set version = "0.5.6" %}
+{% set sha256 = "4ae95e77f9fa7dceb116538500ab48c81a91bf68eb652d45207b794b450f4392" %}
 
 package:
   name: {{ name|lower }}
