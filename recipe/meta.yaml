@@ -1,35 +1,34 @@
 {% set name = "probablepeople" %}
-{% set version = "0.5.5" %}
-{% set sha256 = "6babe345d85577f0e2a174fd819eb29dae7835777d8415f04fbdbe6068819ab3" %}
+{% set version = "0.5.6" %}
+{% set sha256 = "4ae95e77f9fa7dceb116538500ab48c81a91bf68eb652d45207b794b450f4392" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-<<<<<<< rebuild-python312-0-1_h38210c
   number: 1002
-=======
-  number: 0
->>>>>>> main
-  script: python setup.py install --single-version-externally-managed --record record.txt
-  skip: true  # [not py27]
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python
-    - setuptools
-
-  run:
-    - python
-    - python-crfsuite >=0.8
+    - python >=3.9
+    - pip
+    - setuptools >=42
+    - wheel
+    - parserator
+    - python-crfsuite >=0.7
     - probableparsing
-    - future
+    - doublemetaphone
+  run:
+    - python >=3.9
+    - python-crfsuite >=0.7
+    - probableparsing
     - doublemetaphone
 
 test:
@@ -40,7 +39,7 @@ about:
   home: https://parserator.datamade.us/probablepeople
   license: MIT
   license_family: MIT
-  #license_file: LICENSE # When added to MANIFEST.in – datamade/probablepeople#33
+  license_file: LICENSE
   dev_url: https://github.com/datamade/probablepeople/
   doc_url: https://probablepeople.readthedocs.io/en/latest/
   summary: 'Parse romanized names & companies using advanced NLP methods'
