@@ -11,13 +11,13 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1002
+  number: 1003
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools >=42
     - wheel
@@ -26,12 +26,14 @@ requirements:
     - probableparsing
     - doublemetaphone
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - python-crfsuite >=0.7
     - probableparsing
     - doublemetaphone
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - probablepeople
 
